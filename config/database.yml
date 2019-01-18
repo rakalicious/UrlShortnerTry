@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: UrlShortnerTry_dev
+  pool: 5
+  username: rakesh
+  password:
+  host: localhost 
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: UrlShortnerTry_test
+  pool: 5
+  username: rakesh
+  password: 
+  host: localhost
