@@ -1,0 +1,35 @@
+
+<p>
+	<% puts "see this" %>
+	<% puts @login.id %>
+  <strong>username: <%= @login.username %></strong>
+  
+</p>
+
+<%= link_to 'Logout', new_login_path %>
+
+
+<%= form_with scope: :login, url: logins_path, local: true do |form| %>
+  <p>
+    <%= form.label :full_url %><br>
+    <%= form.text_field :long %>
+    <%= form.label :short_ans %><br>
+    <%= form.hidden_field :username %>
+    <%= form.hidden_field :id %>
+    <% params[:username] = "" %>
+    <% params[:id] = @login.id %>
+
+
+  </p>
+  <%= form.submit 'A'%>
+ 
+  <p>
+    <%= form.label :short_url %><br>
+    <%= form.text_area :short %>
+    <%= form.label :long_ans %><br>
+  </p>
+ 
+  <p>
+    <%= form.submit 'B'%>
+  </p>
+<% end %>
