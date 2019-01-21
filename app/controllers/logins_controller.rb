@@ -11,6 +11,7 @@ class LoginsController < ApplicationController
 		if params[:commit] == 'A' || params[:commit] == 'B'
 			convert
 			params[:commit] = ''
+			@login = Login.find(params[:login][:id])
 			render 'logins/show'
 			return
 		end
@@ -34,7 +35,7 @@ class LoginsController < ApplicationController
  
 def convert
     if params[:commit] == 'A'
-    	params[:short] = 'auuu'
+    	params[:login][:short] = 'auuu'
         puts "AAAAAAA"
     elsif params[:commit] == 'B'
         puts "BBBBBBB"

@@ -13,12 +13,19 @@
   <p>
     <%= form.label :full_url %><br>
     <%= form.text_field :long %>
-    <%= form.label :short_ans %><br>
+
+    <% if params[:login] != nil %>
+    <% short_label_val = params[:login][:short] %>
+    <% else %>
+    <% short_label_val = "short_ans" %>
+    <% end %>
+    <%= form.label "#{short_label_val}" %><br>
+
     <%= form.hidden_field :username %>
     <%= form.hidden_field :id %>
     <% params[:username] = "" %>
     <% params[:id] = @login.id %>
-
+    
 
   </p>
   <%= form.submit 'A'%>
