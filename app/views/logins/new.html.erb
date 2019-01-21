@@ -1,5 +1,10 @@
 <!-- logins in pointig to index -->
 <%= form_with scope: :login, url: logins_path, local: true do |form| %>
+  <h1>
+    <center>
+        Url Shortner
+    </center>
+  </h1>
   <p>
     <%= form.label :username %><br>
     <%= form.text_field :username %>
