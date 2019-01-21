@@ -18,6 +18,7 @@ module LoginsHelper
 			 return Url.find_by(long: long_url).short
 		else
 			return Url.find_by(long: long_url).short
+			#render json: {"h" : "hello"}
 		end
 	end
 	def convert_to_short

@@ -12,7 +12,7 @@
     <%= form.label :full_url %><br>
     <%= form.text_field :long %>
     <% if params[:login] == nil %>
-    <% pika = "nope" %>
+    <% pika = "short_op" %>
     <% else %>
     <% pika = params[:login][:short_op] %>
     
@@ -32,11 +32,11 @@
     <%= form.text_field :short %>
 
     <% if params[:login] == nil %>
-    <% pika = "nope" %>
+    <% pika = "long_op" %>
     <% else %>
     <% pika = params[:login][:long_op] %>
     <% end %>
-    
+
     <%= form.label :long_op ,"#{pika}" %><br>
   </p>
  

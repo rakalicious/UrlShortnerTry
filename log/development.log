@@ -7566,3 +7566,261 @@ Processing by LoginsController#new as HTML
 Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
 
 
+Started POST "/logins" for 127.0.0.1 at 2019-01-21 16:47:08 +0530
+  
+SyntaxError (/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:21: syntax error, unexpected ':', expecting '}'
+			render json {"h" : "hello"}
+			                 ^
+/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:21: syntax error, unexpected '}', expecting end
+			render json {"h" : "hello"}
+			                          ^
+/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:44: syntax error, unexpected end-of-input, expecting end):
+  
+app/helpers/logins_helper.rb:21: syntax error, unexpected ':', expecting '}'
+app/helpers/logins_helper.rb:21: syntax error, unexpected '}', expecting end
+app/helpers/logins_helper.rb:44: syntax error, unexpected end-of-input, expecting end
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/logins_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2019-01-21 16:47:37 +0530
+  
+SyntaxError (/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:21: syntax error, unexpected ':', expecting '}'
+			render json {"h" : "hello"}
+			                 ^
+/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:21: syntax error, unexpected '}', expecting end
+			render json {"h" : "hello"}
+			                          ^
+/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:44: syntax error, unexpected end-of-input, expecting end):
+  
+app/helpers/logins_helper.rb:21: syntax error, unexpected ':', expecting '}'
+app/helpers/logins_helper.rb:21: syntax error, unexpected '}', expecting end
+app/helpers/logins_helper.rb:44: syntax error, unexpected end-of-input, expecting end
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/logins_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2019-01-21 16:48:37 +0530
+  
+SyntaxError (/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:21: syntax error, unexpected ':', expecting =>
+			render json: {"h" : "hello"}
+			                  ^
+/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:21: syntax error, unexpected '}', expecting end
+			render json: {"h" : "hello"}
+			                           ^
+/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:44: syntax error, unexpected end-of-input, expecting end):
+  
+app/helpers/logins_helper.rb:21: syntax error, unexpected ':', expecting =>
+app/helpers/logins_helper.rb:21: syntax error, unexpected '}', expecting end
+app/helpers/logins_helper.rb:44: syntax error, unexpected end-of-input, expecting end
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/logins_controller.rb:1:in `<main>'
+Started GET "/login/5" for 127.0.0.1 at 2019-01-21 16:49:14 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/login/5"):
+  
+actionpack (5.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/logins/5" for 127.0.0.1 at 2019-01-21 16:49:22 +0530
+  
+SyntaxError (/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:21: syntax error, unexpected ':', expecting =>
+			render json: {"h" : "hello"}
+			                  ^
+/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:21: syntax error, unexpected '}', expecting end
+			render json: {"h" : "hello"}
+			                           ^
+/Users/rakesh/UrlShortnerTry/app/helpers/logins_helper.rb:44: syntax error, unexpected end-of-input, expecting end):
+  
+app/helpers/logins_helper.rb:21: syntax error, unexpected ':', expecting =>
+app/helpers/logins_helper.rb:21: syntax error, unexpected '}', expecting end
+app/helpers/logins_helper.rb:44: syntax error, unexpected end-of-input, expecting end
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/logins_controller.rb:1:in `<main>'
+  [1m[36mUrl Load (0.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUrl Load (0.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mLogin Load (0.6ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2019-01-21 17:24:05 +0530
+Processing by LoginsController#new as HTML
+  Rendering logins/new.html.erb within layouts/application
+  Rendered logins/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 17ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logins" for 127.0.0.1 at 2019-01-21 17:24:08 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vsuT4IUcg6dQUMrdht6misbnw2AdHG8vYNzczw0omyFMD9LhpzaRchMtLmjetdnHjzgRCtfhLRJUYtc1vj0oew==", "login"=>{"username"=>"ab", "password"=>"[FILTERED]"}, "commit"=>"Save Login"}
+  [1m[36mLogin Load (0.6ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."username" = $1 LIMIT $2[0m  [["username", "ab"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:4
+  [1m[36mCACHE Login Load (0.0ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."username" = $1 LIMIT $2[0m  [["username", "ab"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:6
+Redirected to http://0.0.0.0:3000/logins/5
+Completed 302 Found in 67ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/logins/5" for 127.0.0.1 at 2019-01-21 17:24:09 +0530
+Processing by LoginsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mLogin Load (0.8ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:35
+  Rendering logins/show.html.erb within layouts/application
+  Rendered logins/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 5.4ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/logins" for 127.0.0.1 at 2019-01-21 17:24:14 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s0VD5UwNGo6S7fkbbUXJyi0dii2cPLAFqYzZBfYEbBJBgQLkbicIW9GQHa41LraHZMJYR1bB8jidMtL/RRHfSA==", "login"=>{"long"=>"v", "username"=>"ab", "id"=>"5", "short"=>""}, "commit"=>"A"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."long" = $1 LIMIT $2[0m  [["long", "v"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:14
+  [1m[36mCACHE Url Load (0.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."long" = $1 LIMIT $2[0m  [["long", "v"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:20
+  [1m[36mLogin Load (0.4ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:15
+  Rendering logins/show.html.erb within layouts/application
+  Rendered logins/show.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 5.5ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/logins" for 127.0.0.1 at 2019-01-21 17:24:20 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KSUhO+IWqqFSRYU8pnsN7N3i8R3H2pfd1v0K3eQU1sjb4WA6wDy4dBE4YYn+EHKhlD0jdw0n1eDiQwEnVwFlkg==", "login"=>{"long"=>"", "username"=>"ab", "id"=>"5", "short"=>"TcofSPa"}, "commit"=>"B"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short" = $1 LIMIT $2[0m  [["short", "TcofSPa"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:32
+  [1m[36mCACHE Url Load (0.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short" = $1 LIMIT $2[0m  [["short", "TcofSPa"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:35
+  [1m[36mLogin Load (0.4ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:22
+  Rendering logins/show.html.erb within layouts/application
+  Rendered logins/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 12ms (Views: 6.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/logins" for 127.0.0.1 at 2019-01-21 17:24:29 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j2fh/JTzdYpncSxShmRMw4hy6LySpeNgpg8h4KIcpJF9o6D9ttlnXyQMyOfeDzOOwa061lhYoV2SsSoaEQkXyw==", "login"=>{"long"=>"kaus", "username"=>"ab", "id"=>"5", "short"=>""}, "commit"=>"A"}
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."long" = $1 LIMIT $2[0m  [["long", "kaus"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/helpers/logins_helper.rb:16
+  [1m[36mUrl Create (0.7ms)[0m  [1m[32mINSERT INTO "urls" ("long", "short", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["long", "kaus"], ["short", "OpNgKyu"], ["created_at", "2019-01-21 11:54:29.637021"], ["updated_at", "2019-01-21 11:54:29.637021"]]
+  ↳ app/helpers/logins_helper.rb:16
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/helpers/logins_helper.rb:16
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."long" = $1 LIMIT $2[0m  [["long", "kaus"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:18
+  [1m[36mLogin Load (0.5ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:15
+  Rendering logins/show.html.erb within layouts/application
+  Rendered logins/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 56ms (Views: 5.6ms | ActiveRecord: 43.1ms)
+
+
+Started POST "/logins" for 127.0.0.1 at 2019-01-21 17:24:35 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"I5LadVJD5/BmYjaqcrmD13NA3zDe2PpeyF8G3jaritzRVpt0cGn1JSUf0h8q0vyaOp8NWhQluGP84Q0khb45hg==", "login"=>{"long"=>"", "username"=>"ab", "id"=>"5", "short"=>"OpNgKyu"}, "commit"=>"B"}
+  [1m[36mUrl Load (0.6ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short" = $1 LIMIT $2[0m  [["short", "OpNgKyu"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:32
+  [1m[36mCACHE Url Load (0.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short" = $1 LIMIT $2[0m  [["short", "OpNgKyu"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:35
+  [1m[36mLogin Load (0.4ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:22
+  Rendering logins/show.html.erb within layouts/application
+  Rendered logins/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 6.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/logins" for 127.0.0.1 at 2019-01-21 17:24:38 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K8be/Bza1HcLwSYDJDzyj5l9DwJa+inznhrDD9VKCsrZAp/9PvDGoki8wrZ8V43C0KLdaJAHa86qpMj1Zl+5kA==", "login"=>{"long"=>"", "username"=>"ab", "id"=>"5", "short"=>"a"}, "commit"=>"B"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short" = $1 LIMIT $2[0m  [["short", "a"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:32
+  [1m[36mLogin Load (0.5ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:22
+  Rendering logins/show.html.erb within layouts/application
+  Rendered logins/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 13ms (Views: 8.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/logins/new" for 127.0.0.1 at 2019-01-21 17:24:44 +0530
+Processing by LoginsController#new as HTML
+  Rendering logins/new.html.erb within layouts/application
+  Rendered logins/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/logins" for 127.0.0.1 at 2019-01-21 17:24:48 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6kKhIlifDLoDZyNr++wHG+0LT4Rd8qkcjvtG0Ev2WUEYhuAjerUeb0Aax96jh3hWpNSd7pcP6yG6RU0q+OPqGw==", "login"=>{"username"=>"ab", "password"=>"[FILTERED]"}, "commit"=>"Save Login"}
+  [1m[36mLogin Load (0.4ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."username" = $1 LIMIT $2[0m  [["username", "ab"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:4
+  [1m[36mCACHE Login Load (0.0ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."username" = $1 LIMIT $2[0m  [["username", "ab"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:6
+Redirected to http://0.0.0.0:3000/logins/5
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/logins/5" for 127.0.0.1 at 2019-01-21 17:24:48 +0530
+Processing by LoginsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mLogin Load (0.3ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:35
+  Rendering logins/show.html.erb within layouts/application
+  Rendered logins/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 9ms (Views: 6.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/logins" for 127.0.0.1 at 2019-01-21 17:24:53 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UAPGC9ZohUhdQ6rBAJrfM85IutOXvQ5QaKKoukfbOzWix4cK9EKXnR4+TnRY8aB+h5douV1ATG1cHKNA9M6Ibw==", "login"=>{"long"=>"first", "username"=>"ab", "id"=>"5", "short"=>""}, "commit"=>"A"}
+  [1m[36mUrl Load (0.5ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."long" = $1 LIMIT $2[0m  [["long", "first"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:14
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/helpers/logins_helper.rb:16
+  [1m[36mUrl Create (0.4ms)[0m  [1m[32mINSERT INTO "urls" ("long", "short", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["long", "first"], ["short", "aZWFRXT"], ["created_at", "2019-01-21 11:54:53.955191"], ["updated_at", "2019-01-21 11:54:53.955191"]]
+  ↳ app/helpers/logins_helper.rb:16
+  [1m[35m (39.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/helpers/logins_helper.rb:16
+  [1m[36mUrl Load (0.4ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."long" = $1 LIMIT $2[0m  [["long", "first"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:18
+  [1m[36mLogin Load (0.3ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:15
+  Rendering logins/show.html.erb within layouts/application
+  Rendered logins/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 52ms (Views: 5.4ms | ActiveRecord: 41.7ms)
+
+
+Started POST "/logins" for 127.0.0.1 at 2019-01-21 17:24:58 +0530
+Processing by LoginsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3tSATzkqh4qFUCGhK7tnGB7Jt7mDx7TCio/I2fDfB9QsEMFOGwCVX8YtxRRz0BhVVxZl00k69v++McMjQ8q0jg==", "login"=>{"long"=>"", "username"=>"ab", "id"=>"5", "short"=>"aZWFRXT"}, "commit"=>"B"}
+  [1m[36mUrl Load (0.8ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short" = $1 LIMIT $2[0m  [["short", "aZWFRXT"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:32
+  [1m[36mCACHE Url Load (0.0ms)[0m  [1m[34mSELECT  "urls".* FROM "urls" WHERE "urls"."short" = $1 LIMIT $2[0m  [["short", "aZWFRXT"], ["LIMIT", 1]]
+  ↳ app/helpers/logins_helper.rb:35
+  [1m[36mLogin Load (0.3ms)[0m  [1m[34mSELECT  "logins".* FROM "logins" WHERE "logins"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/logins_controller.rb:22
+  Rendering logins/show.html.erb within layouts/application
+  Rendered logins/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 11ms (Views: 6.4ms | ActiveRecord: 1.1ms)
+
+

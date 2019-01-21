@@ -32,9 +32,6 @@ class LoginsController < ApplicationController
 
 	def show
 		@u = Url.all
-		puts "required"
-		puts Url.first
-		puts params
 		@login = Login.find(params[:id])
 	end
 
