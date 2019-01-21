@@ -1,4 +1,5 @@
 class LoginsController < ApplicationController
+	include LoginsHelper
 	def new
 
 	end
@@ -8,30 +9,36 @@ class LoginsController < ApplicationController
 	end
 
 	def create
-		if params[:commit] == 'A' || params[:commit] == 'B'
-			convert
+		if params[:commit] == 'A'
+			params[:login][:short_op] = new_long_incoming(params[:login][:long])
 			params[:commit] = ''
 			@login = Login.find(params[:login][:id])
 			render 'logins/show'
 			return
 		end
+		if params[:commit] == 'B' 
+			params[:login][:long_op] = find_long_url(params[:login][:short])
+			params[:commit] = ''
+			@login = Login.find(params[:login][:id])
+			render 'logins/show'
+			return
+		end
+		try_login(params[:login][:username],params[:login][:password])
   		@login = Login.new(login_params_log)
  
-  		@login.save
-  		redirect_to @login
+  		#@login.save
+  		redirect_to login_path(:id => 5)
 	end
 
 	def show
+		@u = Url.all
+		puts "required"
+		puts Url.first
 		puts params
 		@login = Login.find(params[:id])
-		puts "nahiiii"
-		puts @login[:id]
-		puts @login[:username]
 	end
 
-	def try_login
-
-	end
+	
  
 def convert
     if params[:commit] == 'A'
@@ -44,7 +51,7 @@ end
 
 private
   	def login_params_log
-    	params.require(:login).permit(:username, :password)
+    	puts params.require(:login).permit(:username, :password)
   	end
   	def login_params_longshort
     	params.require(:login).permit(:long, :short, :id)

@@ -1,7 +1,5 @@
 
 <p>
-	<% puts "see this" %>
-	<% puts @login.id %>
   <strong>username: <%= @login.username %></strong>
   
 </p>
@@ -13,14 +11,13 @@
   <p>
     <%= form.label :full_url %><br>
     <%= form.text_field :long %>
-
-    <% if params[:login] != nil %>
-    <% short_label_val = params[:login][:short] %>
+    <% if params[:login] == nil %>
+    <% pika = "nope" %>
     <% else %>
-    <% short_label_val = "short_ans" %>
+    <% pika = params[:login][:short_op] %>
+    
     <% end %>
-    <%= form.label "#{short_label_val}" %><br>
-
+    <%= form.label :short_op , "#{pika}" %><br>
     <%= form.hidden_field :username %>
     <%= form.hidden_field :id %>
     <% params[:username] = "" %>
@@ -32,8 +29,15 @@
  
   <p>
     <%= form.label :short_url %><br>
-    <%= form.text_area :short %>
-    <%= form.label :long_ans %><br>
+    <%= form.text_field :short %>
+
+    <% if params[:login] == nil %>
+    <% pika = "nope" %>
+    <% else %>
+    <% pika = params[:login][:long_op] %>
+    <% end %>
+    
+    <%= form.label :long_op ,"#{pika}" %><br>
   </p>
  
   <p>
