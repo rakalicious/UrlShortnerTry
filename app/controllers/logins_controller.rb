@@ -1,6 +1,8 @@
 class LoginsController < ApplicationController
 	include LoginsHelper
 	def new
+			##flash[:message] = "You did it! Email sent to "
+			@a = 4
 
 	end
 
@@ -23,11 +25,24 @@ class LoginsController < ApplicationController
 			render 'logins/show'
 			return
 		end
-		try_login(params[:login][:username],params[:login][:password])
-  		@login = Login.new(login_params_log)
+		login_status = try_login(params[:login][:username],params[:login][:password])
+		if login_status == "wrong username"
+			#render new_login_path, notice: "its time"
+  			redirect_to root_path
+			return
+		elsif login_status == "wrong password"
+			redirect_to new_login_path, notice: "its"
+			return
+		elsif login_status == "logged in"
+  			redirect_to login_path(:id => 5)
+  			return
+		else
+			puts "something wrong"
+		end
+
+  		#@login = Login.new(login_params_log)
  
   		#@login.save
-  		redirect_to login_path(:id => 5)
 	end
 
 	def show

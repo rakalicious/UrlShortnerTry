@@ -3,10 +3,13 @@ module LoginsHelper
 	def try_login(username , password)
 		if Login.find_by(username: username) == nil
 			puts "error"
+			return "wrong username"
 		elsif Login.find_by(username: username).password != password
 			puts "not matched"
+			return "wrong password"
 		else
 			puts "matched : log in allowed"
+			return "logged in"
 		end
 	end
 
